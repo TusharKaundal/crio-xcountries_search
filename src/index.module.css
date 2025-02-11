@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgrey;
+    flex-grow: 1;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+.cardImage {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+}
