@@ -1,12 +1,12 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
-import styles from "./index.module.css";
+import "./index.css";
 
 const CountryCard = ({ common, png }) => {
   return (
-    <div className={styles.card}>
-      <img className={styles.cardImage} src={png} alt={common} />
+    <div className="countryCard">
+      <img className="cardImage" src={png} alt={common} />
       <h4>{common}</h4>
     </div>
   );
@@ -60,15 +60,15 @@ const Countries = () => {
   };
 
   return (
-    <div className={styles.wrapper}>
+    <div className="wrapper">
       <input
-        id={styles.searchID}
+        id="searchID"
         type="text"
         value={searchText}
         placeholder="Search for countries..."
         onChange={(ev) => handleInput(ev)}
       />
-      <div className={styles.grid}>
+      <div className="grid">
         {filteredData.map((data, idx) => (
           <CountryCard key={`country-${idx}`} {...data} />
         ))}

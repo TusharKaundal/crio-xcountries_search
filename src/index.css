@@ -8,7 +8,7 @@
     gap: 20px;
 }
 
-.card {
+.countryCard {
     display: flex;
     flex-direction: column;
     justify-content: center;
