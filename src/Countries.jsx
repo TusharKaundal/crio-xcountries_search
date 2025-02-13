@@ -7,7 +7,7 @@ const CountryCard = ({ common, png }) => {
   return (
     <div className="countryCard">
       <img className="cardImage" src={png} alt={common} />
-      <h4>{common}</h4>
+      <p>{common}</p>
     </div>
   );
 };
