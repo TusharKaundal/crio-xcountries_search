@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -18,6 +24,12 @@
     width: 100px;
     height: 100px;
     object-fit: cover;
+}
+
+#searchID {
+    margin-inline: 100px;
+    height: 30px;
+    padding: 10px;
 }
 
 .grid {
